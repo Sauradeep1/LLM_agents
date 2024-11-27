@@ -1,0 +1,16 @@
+langchain==0.0.330
+langchain-core == 0.0.9
+llama-index==0.8.21
+pandas==2.0.0
+protobuf==4.25.1
+PyMuPDF==1.23.6
+PyMuPDFb==1.23.6
+pypdf==3.17.1
+pytest==7.3.1
+pyYAML==6.0.1
+openai==0.28.1
+ipython==8.20.0
+azure-ai-formrecognizer==3.3.2
+azure-core==1.29.7
+Flask==2.2.2
+Flask-RESTful==0.3.9
