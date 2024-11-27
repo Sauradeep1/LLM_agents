@@ -12,9 +12,12 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.tools import tool
 from langchain_openai.chat_models import ChatOpenAI
 from langchain.agents import create_react_agent
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 reflection_prompt = ChatPromptTemplate.from_messages(
     [
@@ -40,6 +43,8 @@ generation_prompt = ChatPromptTemplate.from_messages(
 )
 
 print('executed this far')
+
+os.environ["OPENAI_API_KEY"] = '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'
 
 llm = ChatOpenAI()
 generate_chain = generation_prompt | llm
