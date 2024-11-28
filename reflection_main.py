@@ -47,7 +47,6 @@ generation_prompt = ChatPromptTemplate.from_messages(
 
 print('executed this far')
 
-#os.environ["OPENAI_API_KEY"] = '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'
 llm = ChatOpenAI()
 generate_chain = generation_prompt | llm
 reflect_chain = reflection_prompt | llm
