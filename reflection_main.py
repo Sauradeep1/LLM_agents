@@ -47,8 +47,7 @@ generation_prompt = ChatPromptTemplate.from_messages(
 
 print('executed this far')
 
-#os.environ["OPENAI_API_KEY"] = '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'
-
+#os.environ["OPENAI_API_KEY"] = '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'
 llm = ChatOpenAI()
 generate_chain = generation_prompt | llm
 reflect_chain = reflection_prompt | llm
@@ -97,3 +96,4 @@ if __name__ == "__main__":
 
                                   """)
     response = graph.invoke(inputs)
+print(response)
